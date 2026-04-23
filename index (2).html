@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İyi Ki Varsın! ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            display: flex; /* Sayfayı yan yana böler */
+            background-color: #f0f2f5;
+            overflow: hidden;
+        }
+
+        /* SOL TARAF: FOTOĞRAF */
+        .left-side {
+            flex: 1; /* Ekranın yarısını kapla */
+            background-image: url('arkaplan.jpg'); /* FOTOĞRAF ADINI KONTROL ET */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* SAĞ TARAF: YAZI VE SPOTIFY */
+        .right-side {
+            flex: 1; /* Ekranın diğer yarısını kapla */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #ffffff 0%, #e0eafc 100%);
+        }
+
+        .content-box {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .note {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #576574;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .spotify-container {
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="left-side"></div>
+
+    <div class="right-side">
+        <div class="content-box">
+            <h1>İyi Ki Doğdun! 🎂</h1>
+            <div class="note">
+                "İyi ki doğmuşsun benim güzelim. Tanıştığımız günden beri iyi ki sen aşkımmm.Birlikte büyümek, her ana seninle tanıklık etmek, birlikte gülmek, birlikte ağlamak
+            ve daha birlikte yaptığımız nice şey hepsini ama hepsini çok seviyorum. Ama en çok seniii seviyorum benim bitanem. Hayatın bizi ödüllendirdiği 
+            bir arkadaşlığa sahip olduğumuz için çok şanslı hissediyorum.Seni çok seviyorum aşkımmm bu ve bundan sonraki her doğum gününde pastanın mumlarını
+            yakanın ben olmasını diliyorummm.Şarkıda da dediği gibi ağlarken beraber sevindik el ele, ölsem dirilsem de sen olurdun yine.<3"
+            </div>
+
+            <div class="spotify-container">
+               <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6LffJJG8ZbIPNhteduIW30?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
